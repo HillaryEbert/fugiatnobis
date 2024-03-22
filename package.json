@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "16.11.7",
+    "ava": "^5.3.1",
+    "depcheck": "^1.4.7",
+    "eslint": "^8.56.0",
+    "prettier": "3.0.3",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.8",
+    "tslib": "^2.6.2",
+    "tsup": "^7.2.0",
+    "tsx": "^3.14.0",
+    "turbo": "^1.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HillaryEbert/fugiatnobis.git"
+  },
+  "author": "CoraOlson",
+  "license": "MIT",
+  "packageManager": "pnpm@8.5.1",
+  "engines": {
+    "npm": "Only pnpm"
+  },
+  "name": "fugiatnobis"
+}

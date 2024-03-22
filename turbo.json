@@ -1,0 +1,35 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/*"
+      ]
+    },
+    "deploy": {
+      "dependsOn": [
+        "build",
+        "eslint",
+        "prettier",
+        "depcheck"
+      ]
+    },
+    "test": {
+      "dependsOn": [
+        "build"
+      ],
+      "inputs": [
+        "src/**/*.ts",
+        "test/**/*.ts"
+      ]
+    },
+    "prettier": {},
+    "prettier:fix": {},
+    "eslint": {},
+    "clean": {},
+    "depcheck": {}
+  }
+}
